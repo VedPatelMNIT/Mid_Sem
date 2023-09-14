@@ -1,0 +1,110 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usepackage{graphicx} % Required for inserting images
+\usecolortheme{beaver}
+\title{mid}
+\author{VEDKUMAR HITENDRAKUMAR PATEL}
+\title[]{Functions in C}
+\subtitle{Why functions are important and their uses}
+\author[]{VEDKUMAR PATEL \\ 2022ucp1051 \\ Computer Science Engineering}
+\date{\today}
+\institute[scale =1]{MNTT \includegraphics[scale=0.1]{Mnit_logo.png}}
+
+\begin{document}
+\frame{\titlepage}
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+\section{Introduction}
+\begin{frame}{Introduction}
+    Functions are a block of code which provides re usability of a particular part of the code .Using functions make the code more versatile and decrease the total line of code. Functions behave according to the way they were called , a function might work different for a particular argument and act differently if the argument is changed.\newline
+    Function in C may or may not have a return type , return type is nothing but the nature of the value that would be returned when the function completes itself.\newline
+    This return type not only ensures that the function returns value of a particular type such as int or string or char , but plays a huge role in calling the function recursively
+\end{frame}
+
+\section{Advantages of function}
+\begin{frame}{Advantages of function}
+ADVANTAGES OF FUNCTION
+\begin{enumerate}
+    \item  Code re-usability
+    \item   Neatness of code
+    \item  Recursive calling
+    \item  Ensuring required return type
+    \item  A function created in one file can be called in another file by importing previous file
+    \item Code become easier to debug
+    
+\end{enumerate}
+\end{frame}
+
+ 
+
+\section{Declaration and syntax }
+\begin{frame}{Declaration and syntex}
+     \begin{block}{Declaring}
+        Function declaration begins with the return type (int, char , void..) then the name of the function is written , the name is followed by writing the argumants with thier types seperated by the commas in brackets,After the brackets the curly brackets are are use to denote the code block of functions , everything about function is written inside this two curly brackets .
+        \begin{example}
+            \begin{enumerate}
+                \item void nameOfFunction() \\
+                \{
+                    function code inside it;
+                \}\\
+                \item int nameOfFunction(int a,int b)\\
+                \{
+                    function code inside it which uses the above parameters\\
+                    return(a+b);
+                \}
+            \end{enumerate}
+        \end{example}
+     \end{block}
+\end{frame}
+
+\section{Call by Value vs Reference}
+ 
+\begin{frame}{Call by Value vs Reference}
+    \begin{columns}
+  
+    \column{0.5\textwidth}{BY VALUE}
+    \begin{itemize}
+        
+   
+       \item Copy of variable is passed 
+       \item Since copy is passed the function won't change the original data
+       \item Actual and formal arguments will be created in different memory location
+        \item Default in many programming languages like C++.PHP. Visual Basic NET, and C#.
+        \begin{block}{example}
+            void increment\{int x\}\\
+            \{
+                x = x+1;
+            \}
+        \end{block}
+     \end{itemize}
+    \column{0.5\textwidth}{BY REFERENCE}
+     \begin{itemize}
+        \item The variable itself is passed
+        \item So fuction can alter the original data
+        \item Actual and formal arguments will be created in same memory location
+        \item It is supported by most programming languages like JAVA, but not as default.
+     \begin{block}{example}
+            void increment\{int* x\}\\
+            \{
+                x = x+1;
+            \}
+        \end{block}
+     
+     \end{itemize}
+    \end{columns}
+ 
+\end{frame}
+
+
+\begin{frame}
+    \centering
+    \includegraphics[scale=0.8]{ty.jpeg}
+\end{frame}
+
+\end{document}
+
+
+
+ 
